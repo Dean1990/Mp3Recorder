@@ -51,6 +51,11 @@ if (mRecorder == null) {
 		public void onStop() {
 			//停止录音
 		}
+		
+		@Override
+                public void onRecording(int i, double v) {
+                        Log.d("MainActivity","采样:"+i+"Hz   音量:"+v+"分贝");
+                }
 	});
 }
 if (!mRecorder.isRecording())
