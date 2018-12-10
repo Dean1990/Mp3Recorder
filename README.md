@@ -38,7 +38,7 @@ dependencies {
 开始录音
 
 ```java
-//动态申请权限
+//动态申请权限（略）
 if (mRecorder == null) {
 	mRecorder = new Mp3Recorder();
 	mRecorder.setOnRecordListener(new Mp3Recorder.OnRecordListener() {
