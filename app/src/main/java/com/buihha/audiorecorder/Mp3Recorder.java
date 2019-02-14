@@ -181,7 +181,7 @@ public class Mp3Recorder {
         bufferSize = frameSize * bytesPerFrame;
 
         /* Setup audio recorder */
-        audioRecord = new AudioRecord(MediaRecorder.AudioSource.MIC,
+        audioRecord = new AudioRecord(MediaRecorder.AudioSource.VOICE_COMMUNICATION,
                 samplingRate, channelConfig, audioFormat.getAudioFormat(),
                 bufferSize);
 
